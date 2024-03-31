@@ -1,0 +1,31 @@
+.shdw {
+    text-shadow: black 2px 1px;
+}
+
+.image {
+    height: 400px;
+    background-image: url('assets/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -200px;
+}
+
+h2:before, h2:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
